@@ -5,6 +5,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { useState } from 'react';
+import { styled } from '@mui/material/styles';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -195,8 +197,8 @@ const Footer = () => {
               </Button>
               <Button
                 variant="contained"
-                startIcon={<EmailIcon />}
                 onClick={handleEmailClick}
+                startIcon={<EmailIcon />}
               >
                 Invia Email
               </Button>
