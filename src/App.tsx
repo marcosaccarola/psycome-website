@@ -2,6 +2,8 @@ import { Box, Container, Typography, Grid, Card, CardContent, CardMedia, Button,
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import TeamMember from './components/TeamMember'
+import alessandraConte from './assets/alessandra_conte.png'
+import marikaRosestolato from './assets/marika_rosestolato.png'
 
 function App() {
   return (
@@ -90,7 +92,7 @@ function App() {
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
 
 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-                imageUrl="/src/assets/alessandra_conte.png"
+                imageUrl={alessandraConte}
               />
               <TeamMember
                 name="Marika Rosestolato"
@@ -102,7 +104,7 @@ Sviluppa progetti di prevenzione delle difficoltà di apprendimento associate ne
 Laurea Triennale in Scienze Psicologiche della Personalità e delle Relazioni Interpersonali presso l'Università degli Studi di Padova nel 2007 e la Laurea Specialistica in Psicologia Clinico-Dinamica nel 2010. Si è specializzata in Psicoterapia Sistemico-Relazionale presso EIDOS.
 
 E' iscritta all'Ordine degli Psicologi del Veneto Albo A n°8381.`}
-                imageUrl="/src/assets/marika_rosestolato.png"
+                imageUrl={marikaRosestolato}
               />
               
               {/* Collaboratori */}
