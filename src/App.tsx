@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import { Box, Container, Typography, Grid, Card, CardContent, CardMedia, Button, useTheme, useMediaQuery } from '@mui/material'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import TeamMember from './components/TeamMember'
-import { Container, Box, Typography, Button, Card, CardContent } from '@mui/material'
 
 function App() {
   return (

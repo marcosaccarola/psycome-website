@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { Card, CardMedia, Typography, Box } from '@mui/material';
 
 interface TeamMemberProps {
   name: string;
