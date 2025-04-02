@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import logo from '../assets/logo.png';
 
 const Logo = () => (
-  <img src={logo} alt="Psyram Studio" style={{ width: '72px', height: '72px', objectFit: 'contain', borderRadius: '50%' }} />
+  <img src={logo} alt="Psycome Studio" style={{ width: '72px', height: '72px', objectFit: 'contain', borderRadius: '50%' }} />
 );
 
 const Navbar = () => {
@@ -64,7 +64,7 @@ const Navbar = () => {
                   display: { xs: 'none', sm: 'block' }
                 }}
               >
-                Psyram Studio
+                Psycome Studio
               </Box>
             </Box>
           </Box>

@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:info@studiopsyram.it';
+    window.location.href = 'mailto:info@studiopsycome.it';
   };
 
   return (
@@ -160,7 +160,7 @@ const Footer = () => {
         {/* Copyright */}
         <Box mt={4} textAlign="center">
           <Typography variant="body2" color="text.secondary">
-            © {new Date().getFullYear()} Studio Psyram. Tutti i diritti riservati.
+            © {new Date().getFullYear()} Studio Psycome. Tutti i diritti riservati.
           </Typography>
         </Box>
 

@@ -34,7 +34,7 @@ function App() {
                 className="gradient-text"
                 sx={{ mb: 3 }}
               >
-                Studio di Psicologia Psyram
+                Studio di Psicologia Psycome
               </Typography>
               <Typography 
                 variant="h4" 
