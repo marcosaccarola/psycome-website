@@ -35,6 +35,53 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
+        {/* Bottone Orari Centrato */}
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 6 }}>
+          <Card 
+            onClick={handleContactClick}
+            sx={{ 
+              cursor: 'pointer',
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'translateY(-4px)',
+                boxShadow: '0 8px 16px rgba(79, 70, 229, 0.15)',
+              },
+              bgcolor: 'white',
+              color: '#4F46E5',
+              borderRadius: '100px',
+              boxShadow: '0 4px 12px rgba(79, 70, 229, 0.08)',
+              maxWidth: '600px',
+              width: '100%'
+            }}
+          >
+            <CardContent sx={{ 
+              display: 'flex', 
+              alignItems: 'center',
+              py: '12px !important',
+              px: 3,
+              gap: 1
+            }}>
+              <PhoneIcon sx={{ fontSize: 20 }} />
+              <Box>
+                <Typography variant="body1" sx={{ 
+                  fontWeight: 500,
+                  fontSize: '1rem',
+                  lineHeight: 1.2,
+                  mb: 0.5
+                }}>
+                  Orario del centro: 9.30-13.00 / 14.00-18.00
+                </Typography>
+                <Typography variant="body2" sx={{
+                  fontSize: '0.875rem',
+                  opacity: 0.9
+                }}>
+                  Si risponde al telefono solo in orario pomeridiano
+                </Typography>
+              </Box>
+            </CardContent>
+          </Card>
+        </Box>
+
         <Grid container spacing={4}>
           {/* Colonna 1: Info Centro e Orari */}
           <Grid item xs={12} md={4}>
@@ -47,47 +94,6 @@ const Footer = () => {
               Via Castellana 40/L<br /><br />
               <strong>Partita IVA:</strong> 04136030279
             </Typography>
-            <Card 
-              onClick={handleContactClick}
-              sx={{ 
-                cursor: 'pointer',
-                transition: 'transform 0.2s, box-shadow 0.2s',
-                '&:hover': {
-                  transform: 'translateY(-4px)',
-                  boxShadow: '0 8px 16px rgba(79, 70, 229, 0.15)',
-                },
-                bgcolor: 'white',
-                color: '#4F46E5',
-                borderRadius: '100px',
-                boxShadow: '0 4px 12px rgba(79, 70, 229, 0.08)',
-              }}
-            >
-              <CardContent sx={{ 
-                display: 'flex', 
-                alignItems: 'center',
-                py: '12px !important',
-                px: 3,
-                gap: 1
-              }}>
-                <PhoneIcon sx={{ fontSize: 20 }} />
-                <Box>
-                  <Typography variant="body1" sx={{ 
-                    fontWeight: 500,
-                    fontSize: '1rem',
-                    lineHeight: 1.2,
-                    mb: 0.5
-                  }}>
-                    Orario del centro: 9.30-13.00 / 14.00-18.00
-                  </Typography>
-                  <Typography variant="body2" sx={{
-                    fontSize: '0.875rem',
-                    opacity: 0.9
-                  }}>
-                    Si risponde al telefono solo in orario pomeridiano
-                  </Typography>
-                </Box>
-              </CardContent>
-            </Card>
           </Grid>
 
           {/* Colonna 2: Servizi e Specialisti */}
